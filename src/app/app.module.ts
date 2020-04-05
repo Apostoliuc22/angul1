@@ -10,6 +10,7 @@ import { CarComponent } from './components/car/car.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { ProductsComponent } from './components/products/products.component';
 
+
 const appRoutes: Routes = [
   { path: '', component: CarComponent },
   { path: 'about', component: ContactsComponent },
@@ -22,6 +23,7 @@ const appRoutes: Routes = [
     CarComponent,
     ContactsComponent,
     ProductsComponent
+
   ],
   imports: [
     BrowserModule,
