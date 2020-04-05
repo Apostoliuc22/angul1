@@ -1,0 +1,15 @@
+<h4>Список Задач</h4>
+<form (submit)="addOpt(option.value)">
+    <div class="form-group">
+        <label for="option"></label>
+        <input type="text" id="option" placeholder="Введите задачу" class="form-control" #option><br>
+        <button type="submit" class="btn btn-outline-success">Добавить</button>
+    </div>
+</form>
+<div class="alert alert-warning"> Задачи
+    <ul>
+        <li *ngFor='let opt of options'>
+            {{opt}} <button class="btn btn-warning btn-sm" (click)="deleteOpt(opt)">x</button>
+        </li>
+    </ul>
+</div>
